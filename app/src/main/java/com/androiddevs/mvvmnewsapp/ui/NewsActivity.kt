@@ -6,6 +6,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.androiddevs.mvvmnewsapp.R
 import kotlinx.android.synthetic.main.activity_news.*
+import retrofit2.http.GET
 
 class NewsActivity : AppCompatActivity() {
 
@@ -14,6 +15,9 @@ class NewsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_news)
 
 
+
+
         bottomNavigationView.setupWithNavController(NavHostFragment.findNavController())
     }
+    
 }
