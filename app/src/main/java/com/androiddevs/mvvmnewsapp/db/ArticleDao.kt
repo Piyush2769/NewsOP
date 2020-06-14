@@ -6,7 +6,7 @@ import com.androiddevs.mvvmnewsapp.model.Article
 
 
 @Dao
-interface ArticleDao {
+public interface ArticleDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(article: Article): Long
